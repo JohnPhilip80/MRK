@@ -18,7 +18,7 @@ super();
 // TODO Auto-generated constructor stub
 service = new BookService();
 }
-  @GetMapping("/book")
+  @GetMapping("/title")
   public String displayvalue(){
     return "Welcome to Book Application";
   }
@@ -26,5 +26,6 @@ service = new BookService();
 public List<Book> readBooks(){
 return service.readBooks();
 }
+  
 
 }
