@@ -1,0 +1,10 @@
+com.mrk.bala.bookproject.bookapplication
+com.mrk.bala.bookproject.bookapplication.models
+  Book
+  BookCRUD
+com.mrk.bala.bookproject.bookapplication.controllers
+  BookController
+com.mrk.bala.bookproject.bookapplication.repositories
+  BookRepository
+com.mrk.bala.bookproject.bookapplication.services
+  BookService
