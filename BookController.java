@@ -26,6 +26,23 @@ service = new BookService();
 public List<Book> readBooks(){
 return service.readBooks();
 }
-  
-
+  @PostMapping("/create")
+  public String createBook(@RequestBody Book book){
+    service.createBook(book);
+    return "Book Successfully Created";
+  }
+  @PutMapping("/update")
+  public String updateBook(@RequestBody Book book){
+    service.updateBook(book);
+    return "Book Successfully Updated";
+  }
+  @DeleteMapping("/delete")
+  public String deleteBook(@RequestBody Long bno){
+    service.deleteBook(bno);
+    return "Book Successfully Deleted";
+  }
+  @GetMapping("/book")
+  public Book readBook(@RequestBody Long bno){
+    return service.readBook(bno);
+  }
 }
