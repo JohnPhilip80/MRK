@@ -18,32 +18,49 @@ books.add(new Book(4L,"HTML","Lakshmi",4950.00));
 
 @Override
 public void createBook(Book book) {
-// TODO Auto-generated method stub
+books.add(book);
 
 }
 
 @Override
 public List<Book> readBooks() {
-// TODO Auto-generated method stub
+
 return books;
 }
 
 @Override
 public void updateBook(Book book) {
-// TODO Auto-generated method stub
+int index =0;
+  for(int i=0;i<books.size();i++){
+    if(books.get(i).getBno() == book.getBno()){
+      index = i;
+    }
+  }
+  books.set(index,book);
 
 }
 
 @Override
 public void deleteBook(Long bno) {
-// TODO Auto-generated method stub
+int index =0;
+  for(int i=0;i<books.size();i++){
+    if(books.get(i).getBno() == bno){
+      index = i;
+    }
+  }
+  books.remove(index);
 
 }
 
 @Override
 public Book readBook(Long bno) {
-// TODO Auto-generated method stub
-return null;
+int index =0;
+  for(int i=0;i<books.size();i++){
+    if(books.get(i).getBno() == bno){
+      index = i;
+    }
+  }
+  return books.get(index);
 }
 
 }
