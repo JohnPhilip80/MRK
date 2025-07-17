@@ -1,0 +1,9 @@
+package com.mrk.bala.bookapplication.bookproject.models;
+import java.util.List;
+public interface BookCRUD {
+public void createBook(Book book);
+public List<Book> readBooks();
+public void updateBook(Book book);
+public void deleteBook(Long bno);
+public Book readBook(Long bno);
+}
