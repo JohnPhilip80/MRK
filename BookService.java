@@ -16,5 +16,17 @@ repo= new BookRepository();
 public List<Book> readBooks(){
 return repo.readBooks();
 }
+  public void createBook(Book book){
+    repo.createBook();
+  }
+  public void updateBook(Book book){
+    repo.updateBook();
+  }
+  public void deleteBook(Long bno){
+    repo.deleteBook();
+  }
+  public Book readBook(Long bno){
+    return repo.readBook();
+  }
 
 }
