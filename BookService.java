@@ -1,9 +1,9 @@
-package com.mrk.bala.bookapplication.bookproject.services;
+package com.mrk.john.bookapplication.bookproject.services;
 
 import java.util.List;
 
-import com.mrk.bala.bookapplication.bookproject.models.Book;
-import com.mrk.bala.bookapplication.bookproject.repositories.BookRepository;
+import com.mrk.john.bookapplication.bookproject.models.Book;
+import com.mrk.john.bookapplication.bookproject.repositories.BookRepository;
 
 public class BookService {
 private BookRepository repo = null;
@@ -17,16 +17,16 @@ public List<Book> readBooks(){
 return repo.readBooks();
 }
   public void createBook(Book book){
-    repo.createBook();
+    repo.createBook(book);
   }
   public void updateBook(Book book){
-    repo.updateBook();
+    repo.updateBook(book);
   }
   public void deleteBook(Long bno){
-    repo.deleteBook();
+    repo.deleteBook(bno);
   }
   public Book readBook(Long bno){
-    return repo.readBook();
+    return repo.readBook(bno);
   }
 
 }
