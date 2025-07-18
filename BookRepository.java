@@ -1,8 +1,8 @@
-package com.mrk.bala.bookapplication.bookproject.repositories;
+package com.mrk.john.bookapplication.bookproject.repositories;
 import java.util.ArrayList;
 import java.util.List;
-import com.mrk.bala.bookapplication.bookproject.models.Book;
-import com.mrk.bala.bookapplication.bookproject.models.BookCRUD;
+import com.mrk.john.bookapplication.bookproject.models.Book;
+import com.mrk.john.bookapplication.bookproject.models.BookCRUD;
 
 public class BookRepository implements BookCRUD {
 private List<Book> books=null;
