@@ -1,13 +1,18 @@
-package com.mrk.bala.bookapplication.bookproject.controllers;
+package com.mrk.john.bookapplication.bookproject.controllers;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mrk.bala.bookapplication.bookproject.models.Book;
-import com.mrk.bala.bookapplication.bookproject.services.BookService;
+import com.mrk.john.bookapplication.bookproject.models.Book;
+import com.mrk.john.bookapplication.bookproject.services.BookService;
+
 @RestController
 @RequestMapping("/book/api")
 public class BookController {
