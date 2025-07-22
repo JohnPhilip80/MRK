@@ -16,7 +16,7 @@ import com.mrk.john.bookapplication.bookproject.models.Book;
 import com.mrk.john.bookapplication.bookproject.services.BookDBService;
 
 @RestController
-@RequestMapping("/book/api")
+@RequestMapping("/book/db/api")
 public class BookDBController {
 	@Autowired
 	private BookDBService service;
