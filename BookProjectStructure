@@ -4,7 +4,10 @@ com.mrk.bala.bookapplication.bookproject.models
   BookCRUD
 com.mrk.bala.bookapplication.bookproject.controllers
   BookController
+  BookDBController
 com.mrk.bala.bookapplication.bookproject.repositories
   BookRepository
+  BookDBRepository
 com.mrk.bala.bookapplication.bookproject.services
   BookService
+  BookDBService
