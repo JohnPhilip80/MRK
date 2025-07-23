@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mrk.john.bookapplication.bookproject.models.Book;
 import com.mrk.john.bookapplication.bookproject.services.BookDBService;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/book/db/api")
 public class BookDBController {
